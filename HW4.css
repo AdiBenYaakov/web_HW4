@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.row {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+    margin-bottom: 10px;
+}
+
+h1 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black; 
+    padding: 20px;
+    width: fit-content; 
+}
+
+.row label {
+    width: 160px; 
+    text-align: left; 
+}
+
+.row input {
+    width: 200px; 
+}
+
+fieldset {
+    border: 1px solid #000000; 
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%; 
+}
+
+legend {
+    font-size: 0.9em;
+    padding: 0 5px; 
+}
+
+.radio-group {
+    display: flex;
+    gap: 20px; 
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: auto; 
+}
+
+.green {
+    background-color: greenyellow;
+}
+
+#messageArea {
+    margin-top: 10px;
+    padding: 5px;
+    min-height: 25px;
+}

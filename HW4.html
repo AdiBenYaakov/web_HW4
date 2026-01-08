@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="he" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="HW4.css">
+    <title>מחשבון קבלה לאוניברסיטה</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Colledge Admissions Calculator</h1>
+        <form>
+            <div class="row">
+                <label for="age">age:</label>
+                <input type="number" id="age" name="age" min="0" max="120" required>
+            </div>
+            
+            <fieldset>
+                <legend>Select from the below options:</legend>
+                <div class="radio-group">
+                    <label>
+                        Psychometric and Bagrut
+                        <input type="radio" name="route" value="psy" onclick="handleRouteSelection('psy')">
+                    </label>         
+                    <label>
+                        Mechina and Bagrut
+                        <input type="radio" name="route" value="mech" onclick="handleRouteSelection('mech')">
+                    </label>
+                </div>
+            </fieldset>
+
+            <div class="row">
+                <label for="psy_grade">Psychometric Grade:</label>
+                <input type="number" id="psy_grade" name="psy_grade" min="200" max="800">  
+            </div>
+            <div class="row">
+                <label for="Bagrut_grade">Bagrut Grade:</label>
+                <input type="number" id="Bagrut_grade" name="Bagrut_grade" min="0" max="100">  
+            </div>       
+            <div class="row">
+                <label for="Mechina_grade">Mechina Grade:</label>
+                <input type="number" id="Mechina_grade" name="Mechina_grade" min="0" max="100">  
+            </div> 
+            
+            <button type="button" onclick="validate()">validate</button>
+            
+            <div id="messageArea"></div>
+        </form>
+    </div>
+    <script src="HW4.js"></script>
+</body>
+</html>
